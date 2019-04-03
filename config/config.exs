@@ -31,4 +31,4 @@ use Mix.Config
 
 
 config :minimal_server, MinimalServer.Endpoint,
-  port:  System.get_env("PORT") || "4000" |> String.to_integer()
+  port:  System.get_env("PORT") |> String.to_integer()
