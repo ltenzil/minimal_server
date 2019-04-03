@@ -28,3 +28,7 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env()}.exs"
+
+
+config :minimal_server, MinimalServer.Endpoint,
+  port:  System.get_env("PORT") || "4000" |> String.to_integer()
